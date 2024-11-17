@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .sp{
+      padding: 10px;
+      font-size: 20px;
+      color: #444444;
+    }
+    body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+.icon{
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #eaf4fb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* transition: ease-in-out 0.3s; */
+    font-size: 25px;
+  
+  
+    
+}
+.div1:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all ease-in-out 1.0s;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+.div1:hover  #h3{
+  color: lightseagreen;
+}
+.skills-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-top: 20px;
+}
+
+.skill {
+    margin: 15px 0;
+    padding: 10px;
+    
+}
+
+.skill span {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.progress-bar {
+    width: 500px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 55%;
+    height: 100%;
+    background-color:lightskyblue;
+}
+.stats-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 36px;
+    color:lightskyblue;
+    font-weight: bold;
+}
+
+.stat .label {
+    font-size: 14px;
+    color: #333;
+}
+#i{
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #eaf4fb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* transition: ease-in-out 0.3s; */
+    font-size: 31px;
+    color: lightseagreen;    
+}
+#io{
+  font-size: 40px;
+}
+.para:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all ease-in-out 0.3s;
+    background: #fff; 
+}
+#nam{
+  background-color: white;
+  margin: 0px;
+}
+.div5 .web{
+    text-decoration: none;
+    padding: 10px;
+}
+#all{
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.web:hover{
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.cards{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 12px;
+ padding-top: 30px;
+
+ 
+}
+.card{
+    width: 350px;
+    padding-bottom: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.content{
+    padding: 10PX;
+}
+.container H4,span{
+    padding: 5PX;
+}
+.card .content{
+display: flex; flex-direction: column; text-align: center;
+}
+#span:hover{
+  color: lightskyblue;
+}
+#info{
+  font-size: 35px;
+  background-color: rgb(210, 225, 235);
+  border-radius: 30px;
+  padding: 30px;
+  
+}
+#info:hover{
+  background-color: lightskyblue;
+ 
+}
+.call{
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.href{
+  color: rgba(255, 255, 255, 0.6);
+  /* transition: 0.3s; */
+  text-decoration: none;
+}
+  </style>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+   <div class="container-fluid d-flex fixed-top bg-light navbar-light align-items-center ">
+        <nav class="navbar navbar-expand-sm  container">
+        <div class=" d-flex align-items-center">
+          <a class="navbar-brand" href="#">LUMIA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#HOME">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ABOUT">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SERVICES">SERVICES</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#PORTFOLIO">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#TESTIMONIALS">TESTIMONIALS</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">dropdown 1</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 2</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 3</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 4</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 5</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#CONTACT">CONTACT</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+      
+        <span class="sp "><i class="fa-brands fa-youtube"></i></span>
+        <span class="sp "><i class="fa-brands fa-facebook"></i></span>
+        <span class="sp "><i class="fa-brands fa-twitter"></i></span>
+        <span class="sp "><i class="fa-brands fa-github"></i></span>
+      
+   </div>
+
+   <br><br>
+    <div class="mx-auto" style="background-image: url(./hero-bg.jpg);background-size: cover;background-repeat: no-repeat; height: 400px;">
+      <h2 style="padding-top: 155px;text-align: center;">Welcome to <span style="border-bottom: 2px  solid; " class="text-info">Lumia</span></h2>
+      <h4 style="text-align: center; padding: 10px;">We are team of talented designers making websites with Bootstrap</h4>
+     <div style="text-align: center;">  <button class="btn btn-info text-light  mx-auto" >GET STARTED</button></div>
+     </div>
+   
+     
+     <div class="container row mx-auto p-4" style="text-align: center;">
+      <div  style="text-align: center; " class="p-4">
+        <h3 >What <span style="border-bottom: 2px solid rgb(131, 218, 247);">We</span> Do</h3>
+        <h5 style="padding: 10px;">Magnam dolores commodi suscipit consequatur ex aliquid</h5>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 div1">
+        <i class="fa-brands fa-dribbble icon text-info"></i>
+        <h3 id="h3" class="text-dark">Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias </p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 div1">
+        <i class="fa-solid fa-file-lines icon text-info"></i>
+        <h3 id="h3" class="text-dark">Sed ut perspiciatis</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 div1">
+        <i class="fa-solid fa-podcast icon text-info"></i>
+        <h3 id="h3" class="text-dark">Magni Dolores</h3>
+        <p>  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+     </div>
+  
+     <br><br>   
+
+     <div class="container row mx-auto">
+      <div class="col-lg-6 col-md-6 col-sm-12"><img src="./about.jpg" alt="" width="100%"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3 class="text-dark">About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.</p>
+        <i class="fa-solid fa-check text-info p-2"></i><span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span><br>
+        <i class="fa-solid fa-check text-info p-2"></i><span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+        <br><br>  
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <i class="fa-solid fa-scroll text-info  p-2" style="font-size: 41px;"></i>
+          <h4>Corporis voluptates sit</h4>
+          <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <i class="fa-brands fa-codepen text-info p-2" style="font-size: 41px;"></i>
+          <h4>Ullamco laboris nisi</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <br><br>
+  
+     <div class="skills-section row">
+      <div class="span">
+          <div class="skill col-lg-4 col-md-4 col-sm-12">
+              <span>HTML</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 100%;"></div>
+              </div>
+          </div>
+          <div class="skill col-lg-4 col-md-4 col-sm-12">
+              <span>CSS</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 90%;"></div>
+              </div>
+          </div>
+          <div class="skill col-lg-6 col-md-6 col-sm-12">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 75%;"></div>
+              </div>
+          </div>
+      </div>
+       <div class="span">
+        <div class="skill col-lg-6 col-md-6 col-sm-12">
+              <span>PHP</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 80%;"></div>
+              </div>
+          </div>
+          <div class="skill col-lg-6 col-md-6 col-sm-12">
+              <span>WordPress/CMS</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 90%;"></div>
+              </div>
+          </div>
+          <div class="skill col-lg-6 col-md-6 col-sm-12">
+              <span>Photoshop</span>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 55%;"></div>
+              </div>
+          </div>
+       </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat">
+            <i class="fa-solid fa-face-smile text-info" id="i"></i><br>
+            <span class="number">232</span><br>
+            <span class="label">Happy Clients</span>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-book-open-reader text-info" id="i"></i><br>
+            <span class="number">521</span><br>
+            <span class="label">Projects</span>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-headphones-simple text-info" id="i"></i><br>
+            <span class="number">1463</span><br>
+            <span class="label">Hours of Support</span>
+        </div>
+        <div class="stat">
+            <i class="fa-solid fa-user-group text-info" id="i"></i><br>
+            <span class="number">15</span><br>
+            <span class="label">Hard Workers</span>
+        </div>
+    </div>
+
+
+
+    <div class="   bg-light p-3">
+   <div class="container row mx-auto">
+    <div style="text-align: center;">
+      <h2 class="text-dark">Services</h2>
+      <h5>Necessitatibus eius consequatur ex aliquid fuga eum quidem</h5>
+    </div>
+    <br><br> <br><br> <br><br>
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 mx-4 " id="nam">
+      <i class="fa-solid fa-envelope text-info" id="io"></i><br><br>
+      <h3 class="text-dark" >Lorem Ipsum</h3>
+      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+         sint occaecati cupiditate non provident</p>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 mx-4" id="nam">
+      <i class="fa-solid fa-pager text-info" id="io"></i> <br><br>     
+      <h3 class="text-dark">Sed ut perspiciatis</h3>
+      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+         ex ea commodo consequat tarad limino ata</p>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 m-4" id="nam">
+      <i class="fa-solid fa-signal text-info" id="io"></i><br><br>
+      <h3 class="text-dark">Dolor Sitema</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+        dolore eu fugiat nulla pariatur</p>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 m-4" id="nam">
+      <i class="fa-solid fa-binoculars text-info" id="io"></i><br><br>
+      <h3 class="text-dark">Nemo Enim</h3>        
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+        officia deserunt mollit anim id est laborum</p>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 m-4" id="nam">
+     <i class="fa-regular fa-sun text-info" id="io"></i><br><br>
+      <h3 class="text-dark">Eiusmod Tempor</h3>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+         blanditiis praesentium voluptatum deleniti atque</p>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-11 para p-3 m-4 " id="nam">
+     <i class="fa-solid fa-calendar text-info" id="io"></i><br><br>
+      <h3 class="text-dark">Dolor Sitema</h3>
+      <p>Et harum quidem rerum facilis est et expedita distinctio. Nam 
+        libero tempore, cum soluta nobis est eligendi</p>
+    </div>
+   </div>
+    </div>
+
+
+
+    <div class="container " style="text-align: center;">
+      <div class="div5">
+        <h2 class="text-dark">Portfolio  </h2>  <br>    
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit  </p><br>
+        <a href="#" id="all" class="text-dark web">ALL</a>
+        <a href="#" class="text-dark web">APP</a>
+        <a href="#" class="text-dark web">CARD</a>
+        <a href="#" class="text-dark web">WEB</a>
+      
+    </div>
+    </div>
+
+    <section class="cards container">
+      <div class="card" >
+        
+          
+          <img src="./portfolio-details-1.jpg" alt="" width="100%" height="265PX">
+          <!-- <div class="overlay">
+              <a>sklkfl</a>
+              <a>euougoureo</a>
+          </div> -->
+
+          <div class="content">
+              <h4 >App 1</h4>
+              <span>App</span>
+          </div>
+      </div>
+     
+      <div class="card" >
+          <img src="./portfolio-2.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >WEB 1</h4>
+              <span>WEB</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-3.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >App 2</h4>
+              <span>App</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-4.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >CARD 1</h4>
+              <span>CARD</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-5.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >WEB 1</h4>
+              <span>WEB</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-6.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >App 3</h4>
+              <span>App</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-7.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >CARD 3</h4>
+              <span>CARD</span>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./portfolio-8.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >WEB 1</h4>
+              <span>WED</span>
+          </div>
+      </div>
+
+         <div class="card" >
+          <img src="./portfolio-9.jpg" alt="" width="100%">
+          <div class="content">
+              <h4 >CARD 1</h4>
+              <span>CARD</span>
+          </div>
+      </div>
+  </section>
+
+  <div class="bg-light p-5">
+
+<div style="text-align: center;">
+  <h3 class="text-dark">Testimonials</h3>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+</div>
+  
+  <!-- The slideshow/carousel -->
+ <div class="container row card">
+
+
+        <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+  </div>
+
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active col-lg-4 col-md-4 col-sm-11 card-body ">
+      <p class="card-text"><i class="fa-solid fa-quote-left text-info"></i><i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Excepturi quam corporis, repudiandae labore fuga quis exercitationem? Maxime, voluptas quam ad,
+         rem expedita explicabo saepe neque no       
+      </i>
+         <i class="fa-solid fa-quote-right text-info"></i></p>
+      <img src="./testimonials-3.jpg" alt="Los Angeles"  style="width:50% ; border-radius: 50%;" class="card-img-top">
+      <h5 class="card-title">JENA KARLIS</h5>
+      <p class="card-text">RTORE OWNER</p>
+    </div>
+
+    <div class="carousel-item col-lg-4 col-md-4 col-sm-11 card-body">
+      <p class="card-text"><i class="fa-solid fa-quote-left text-info "></i><i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Excepturi quam corporis, repudiandae labore fuga quis exercitationem? Maxime, voluptas quam ad,
+        rem expedita explicabo saepe neque no
+            </i>
+        <i class="fa-solid fa-quote-right text-info"></i>
+      <img src="./testimonials-4.jpg" alt="Chicago"  style="width:50% ; border-radius: 50%" class="card-img-top">
+      <h5 class="card-title">SARA WILSSON</h5>
+      <p class="card-text">DESIGNER</p>
+    </div>
+
+    <div class="carousel-item col-lg-4 col-md-4 col-sm-11 card-body">
+      <p class="card-text"><i class="fa-solid fa-quote-left text-info"></i><i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Excepturi quam corporis, repudiandae labore fuga quis exercitationem? Maxime, voluptas quam ad,
+        rem expedita explicabo saepe neque no
+             </i>
+        <i class="fa-solid fa-quote-right text-info"></i>
+      <img src="./testimonials-5.jpg" alt="New York" style="width:50% ; border-radius: 50%" class="card-img-top">
+      <h5 class="card-title">MATT BRANDOW</h5>
+      <p class="card-text">FREELANCER</p>
+    </div>
+
+    <div class="carousel-item col-lg-4 col-md-4 col-sm-11 card-body">
+      <p class="card-text"><i class="fa-solid fa-quote-left text-info"></i><i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Excepturi quam corporis, repudiandae labore fuga quis exercitationem? Maxime, voluptas quam ad,
+        rem expedita explicabo saepe neque no
+          </i>
+        <i class="fa-solid fa-quote-right text-info"></i>
+      <img src="./testimonials-2.jpg" alt="New York"  style="width:50% ; border-radius: 50%" class="card-img-top">
+      <h5 class="card-title">JOHN LARSON</h5>
+      <p class="card-text">ENTREPRENEUR</p>
+    </div>
+
+    <div class="carousel-item col-lg-4 col-md-4 col-sm-11 card-body">
+      <p class="card-text"><i class="fa-solid fa-quote-left text-info"></i><i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Excepturi quam corporis, repudiandae labore fuga quis exercitationem? Maxime, voluptas quam ad,
+        rem expedita explicabo saepe neque no
+            </i>
+        <i class="fa-solid fa-quote-right text-info"></i>
+      <img src="./testimonials-1.jpg" alt="New York"  style="width:50% ; border-radius: 50%" class="card-img-top">
+      <h5 class="card-title">SAUL GOODMAN</h5>
+      <p class="card-text">CEO & FOUNDER</p>
+    </div>
+  </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="bg-light p-4">
+<h3 style="text-align: center;">Team</h3>
+<p style="text-align: center;">Sit sint consectetur velit quos quisquam cupiditate nemo qui</p>
+<br><br><br>
+  <div class="container row mx-auto ">
+    <div class="col-md-4 col-sm-12 col-lg-4 card mx-auto  p-4" style="text-align: center;">
+      <img src="./team-1.jpg" alt="" width="80%" class="rounded-circle  d-block mx-auto p-3"  >
+      <h5>Walter White</h5>
+      <p class="card-text"><i>Chief Executive Officer</i></p>
+      <p class="card-text"><i>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</i></p>
+      <span style="font-size: 25px;" id="span">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+     </span>
+    </div>
+  
+  
+    <div class="col-md-4 col-sm-12 col-lg-4 card mx-auto  p-4" style="text-align: center;">
+      <img src="./team-2.jpg" alt="" width="80%" class="rounded-circle  d-block mx-auto p-3" >
+      <h5 class="card-title">Sarah Jhinson</h5>
+      <p class="card-text"><i>Product Manager</i></p>
+      <p class="card-text"><i>Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus</i></p>
+      <span style="font-size: 25px;" id="span">
+      <i class="fa-brands fa-twitter"></i>   
+      <i class="fa-brands fa-facebook"></i>   
+    <i class="fa-brands fa-instagram"></i>   
+      <i class="fa-brands fa-linkedin"></i>   
+     </span>
+    </div>
+  
+  
+    <div class="col-md-4 col-sm-12 col-lg-4 card  mx-auto p-4" style="text-align: center;">
+      <img src="./team-3.jpg" alt="" width="80%" class="rounded-circle d-block mx-auto p-3"  >
+      <h5 class="card-title">William Anderson</h5>
+      <p class="card-text">CTO</p>
+      <p class="card-text">Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara</p>
+    <span style="font-size: 25px;" id="span">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    </span>
+      </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="bg-light p-4">
+  <h3 style="text-align: center;">Contact</h3>
+  <p style="text-align: center;">Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+
+
+  <div class="container row mx-auto call">
+    <div class="col-md-4 col-lg-4 col-sm-12">
+      <i class="fa-solid fa-location-dot text-info p-2" id="info" ></i>
+      <h3>Location:
+      </h3>
+      <p>A108 Adam Street <br>
+        New York, NY 535022</p>
+    </div>
+
+    <div class="col-md-4 col-lg-4 col-sm-12">
+      <i class="fa-regular fa-envelope text-info p-2" id="info" ></i>
+      <h3>Email:</h3>
+      <p>info@example.com <br>
+        contact@example.com</p>
+    </div>
+
+    <div class="col-md-4 col-lg-4 col-sm-12">
+      <i class="fa-solid fa-mobile-screen-button text-info p-2" id="info" ></i>
+      <h3>Call:</h3>
+      <p>+1 5589 55488 51 <br>
+        +1 5589 22475 14</p>
+    </div>
+  </div>
+
+
+  <div class="container mt-3  p-4" style="background-color: white;">
+    
+    <form>
+      <div class="row gap-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Your Name" name="Name">
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" placeholder="Your Email" name="Email">
+        </div>
+        <div>
+          <input type="password" class="form-control" placeholder="Subject" name="Subject">
+        </div>
+       <div >
+        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="message"></textarea>
+       </div>
+      <div style="text-align: center;">
+        <button type="button" class="btn btn-info text-light">Send Message</button>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<footer  class="bg-light  p-2">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 20px;">
+
+    <!-- Company Info Section -->
+    <div style="flex: 1;">
+      <h3 class="text-dark">LUMIA</h3><br>
+      <p class="text-dark">A108 Adam Street<br><br>New York, NY 535022<br><br>United States</p><br>
+      <p class="text-dark"><strong>Phone:</strong> +1 5589 55488 55<br><br>
+      <strong class="text-dark">Email:</strong> info@example.com</p>
+    </div>
+
+    <!-- Useful Links Section -->
+    <div style="flex: 1;">
+      <h4 class="text-dark">Useful Links</h4><br>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html"  class="href text-dark" >Home</a></li><br>
+        <li><a href="about.html"  class="href text-dark">About us</a></li><br>
+        <li><a href="services.html" class="href text-dark" >Services</a></li><br>
+        <li><a href="Terms of service.html" class="href text-dark" >Terms of service</a></li><br>
+        <li><a href="Privacy policy.html" class="href text-dark" >Privacy policy</a></li><br>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div style="flex: 1;">
+      <h4 class="text-dark">Our Services</h4><br>
+      <ul style="list-style: none; padding: 0; " class="href text-dark">
+        <li><a href="Web Design.html" class="href text-dark">Web Design</a></li><br>
+        <li><a href="Web Development.html" class="href text-dark">Web Development</a></li><br>
+        <li><a href="Product Management.html" class="href text-dark">Product Management</a></li><br>
+        <li><a href="Marketing.html" class="href text-dark">Marketing</a></li><br>
+        <li><a href="Graphic Design.html" class="href text-dark">Graphic Design</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div style="flex: 1;">
+      <h4 class="text-dark">Join Our Newsletter</h4><br><br>
+      <p class="text-dark">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p><br><br><br>
+      <form style="display: flex;">
+        <input type="email" placeholder="Your Email" style="padding: 10px 20px; width: 70%; border: none;background-color: white; ">
+        <button type="submit" class="bg-info text-light p-2" style="border: none;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div style="display: flex;
+      padding: 20px; width: 80%; margin: auto; padding: 20px;" >
+    <div style="width: 90%;">
+      <p class="text-dark">© Copyright <strong>LUMIA</strong>. All Rights Reserved</p>
+    <p class="text-dark">Designed by <a href="https://bootstrapmade.com/" class="text-info">BootstrapMade</a></p>
+ 
+    </div>
+
+
+    <div style="width: 30%;">
+      <a href="#"><i class="fa-brands fa-twitter twitter text-info p-2" style="font-size: 25px;"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook facebook text-info p-2" style="font-size: 25px;"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram instagram text-info p-2" style="font-size: 25px;"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin linkedin text-info p-2" style="font-size: 25px;"></i></a>
+
+
+      
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+</body>
+</html>
